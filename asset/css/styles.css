@@ -1,57 +1,39 @@
-/* asset/css/styles.css */
+/* asset/css/new-styles.css */
 
 :root {
-    --primary-color: #007bff; /* Strong professional blue */
-    --secondary-color: #6c757d; /* Medium gray for accents and secondary text */
-    --accent-color: #28a745; /* Professional green */
-    --body-text-color: #495057; /* Slightly darker gray for better readability */
-    --background-light: #f8f9fa; /* Light gray background */
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --body-text-color: #495057;
+    --background-light: #f8f9fa;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--body-text-color);
-    line-height: 1.7; /* Slightly increased line height for better readability */
-    background-color: var(--background-light); /* Light background for overall softer feel */
-}
-
-.section-title {
-    position: relative;
-    padding-bottom: 0.75rem; /* Reduced padding */
-    margin-bottom: 2.5rem; /* Increased margin for more visual space */
-    font-weight: 700;
-    color: var(--primary-color);
-    font-size: 2.2rem; /* Slightly larger title */
-    text-align: center; /* Center the section titles for better focus */
-}
-
-.section-title::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 60px; /* Slightly wider line */
-    height: 4px; /* Slightly thicker line */
-    background-color: var(--primary-color);
-    transform: translateX(-50%);
+    line-height: 1.7;
+    background-color: #fff; /* Default white background */
 }
 
 /* Header */
+.fixed-top {
+    z-index: 1030; /* Ensure it stays above other content */
+}
+
 header {
-    background-color: #fff; /* White header for clean look */
-    padding: 0.75rem 0; /* Adjusted padding */
+    padding: 0.75rem 0;
 }
 
 .navbar-brand {
-    font-weight: 700; /* Stronger brand text */
+    font-weight: 700;
     font-size: 1.5rem;
-    color: var(--primary-color); /* Brand in primary color */
+    color: var(--primary-color);
 }
 
 .nav-link {
     color: var(--secondary-color) !important;
-    padding: 0.75rem 1.2rem !important; /* Slightly more horizontal padding */
-    transition: color 0.3s ease-in-out; /* Smoother transition */
+    padding: 0.75rem 1.2rem !important;
+    transition: color 0.3s ease-in-out;
     font-weight: 500;
 }
 
@@ -60,49 +42,83 @@ header {
 }
 
 .nav-item:not(:last-child) {
-    margin-right: 0.5rem; /* Add some spacing between nav items */
+    margin-right: 0.5rem;
 }
 
-/* Banner */
-#banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('asset/images/creobackground.jpg') no-repeat center center/cover;
-    color: #fff;
+/* Hero Section */
+#hero {
+    padding-top: 100px; /* Adjust for fixed header */
+    padding-bottom: 6rem;
     text-align: center;
-    padding: 8rem 0; /* Increased padding for more visual space */
 }
 
-#banner h1 {
-    font-size: 3.8rem; /* Slightly larger main heading */
-    font-weight: 800; /* Stronger weight */
-    margin-bottom: 1rem;
-    letter-spacing: -0.05rem; /* Slightly tighter letter spacing */
+#hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
 }
 
-#banner .lead {
-    font-size: 1.7rem; /* Slightly larger lead text */
-    margin-bottom: 2.5rem;
+#hero .lead {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
     font-weight: 400;
 }
 
-#banner .btn-primary {
-    background-color: var(--primary-color);
-    color: #fff;
-    border-color: var(--primary-color);
+#hero .btn-primary,
+#hero .btn-outline-light {
     font-size: 1.1rem;
     padding: 1rem 2rem;
     border-radius: 0.3rem;
-    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-#banner .btn-primary:hover {
+#hero .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+#hero .btn-primary:hover {
     background-color: #0056b3;
     border-color: #0056b3;
 }
 
+#hero .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+#hero .btn-outline-light:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+    border-color: #fff;
+}
+
+/* Section Titles */
+.section-title {
+    position: relative;
+    padding-bottom: 0.75rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    transform: translateX(-50%);
+}
+
 /* About Section */
 #about {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 #about .lead {
@@ -113,16 +129,16 @@ header {
 
 /* Services Section */
 #services {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    background-color: #fff; /* White background for service cards */
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: var(--background-light);
 }
 
 #services .card {
     border: none;
     border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05); /* Softer shadow */
-    transition: transform 0.2s ease-in-out; /* Subtle hover effect */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
 }
 
 #services .card:hover {
@@ -134,119 +150,18 @@ header {
     text-align: center;
 }
 
+#services .fa-3x {
+    font-size: 3em;
+}
+
 #services .card-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--accent-color);
-    margin-bottom: 1.2rem;
-}
-
-#services .list-unstyled {
-    margin-top: 1rem;
-}
-
-#services .list-unstyled li {
-    margin-bottom: 0.7rem;
-    color: var(--body-text-color);
-}
-
-#services .list-unstyled li i {
-    color: var(--accent-color);
-    margin-right: 0.5rem;
-}
-
-/* Team Section */
-#team {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    background-color: var(--background-light);
-}
-
-#team .card {
-    border: none;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
-    text-align: center;
-}
-
-#team .card-img-top {
-    border-radius: 50%; /* Circular images */
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    margin: 1rem auto;
-}
-
-#team .card-body {
-    padding: 1.5rem;
-}
-
-#team .card-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-#team .card-text {
-    color: var(--secondary-color);
-}
-
-/* Contact Section */
-#contact {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    background-color: #fff;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-}
-
-#contact p {
-    font-size: 1.1rem;
-    color: var(--body-text-color);
     margin-bottom: 1rem;
 }
 
-#contact a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
-}
-
-#contact a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-#contact strong {
-    font-weight: 700;
-}
-
-/* Footer */
-footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 2.5rem 0; /* Increased padding */
-    text-align: center;
-}
-
-footer img {
-    margin-bottom: 0.75rem;
-}
-
-footer p {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Utility Classes (Minor Adjustments) */
-.shadow-sm {
-    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.06) !important; /* Slightly softer shadow */
+#services .card-text {
+    color: var(--body-text-color);
+    margin-bottom: 1.5rem;
 }
