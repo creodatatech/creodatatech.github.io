@@ -1,206 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Creodatatech is a leading provider of cutting-edge data and AI technology services." />
-    <title>Creodatatech</title>
-    <link rel="icon" href="asset/images/logo.png" type="image/png" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="asset/css/main.css" />
-    <style>
-      body {
-        font-family: 'Raleway', sans-serif;
-        color: #333;
-        background-color: #f4f7fa;
-      }
-      header {
-        background-color: #001f3f;
-      }
-      .navbar-nav .nav-link {
-        color: white;
-        font-weight: 600;
-        transition: color 0.3s ease;
-      }
-      .navbar-nav .nav-link:hover {
-        color: #17a2b8;
-      }
-      .banner {
-        position: relative;
-        text-align: center;
-        color: white;
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('asset/images/creobackground.jpg') no-repeat center center/cover;
-        padding: 100px 0;
-      }
-      .banner h1 {
-        font-size: 3.5rem;
-        font-weight: 700;
-      }
-      .banner h2 {
-        font-size: 1.75rem;
-        font-weight: 400;
-        color: #17a2b8;
-      }
-      .default-section-heading {
-        font-size: 2.25rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        color: #001f3f;
-      }
-      .expertices-block {
-        background: white;
-        border-radius: 12px;
-        padding: 30px;
-        margin-bottom: 30px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-        transition: transform 0.3s ease;
-      }
-      .expertices-block:hover {
-        transform: translateY(-5px);
-      }
-      .expertices-block h4 {
-        color: #001f3f;
-      }
-      .team-section .team_detail {
-        background: white;
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        transition: transform 0.3s ease;
-      }
-      .team-section .team_detail:hover {
-        transform: translateY(-5px);
-      }
-      .footer {
-        background-color: #001f3f;
-        color: white;
-        padding: 30px 0;
-        text-align: center;
-      }
-      .footer img {
-        max-width: 120px;
-        margin-bottom: 15px;
-      }
-      .contact-section a {
-        color: #17a2b8;
-        text-decoration: none;
-      }
-      .contact-section a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">Creodatatech</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creodatatech | AI & Data Innovation</title>
+  <meta name="description" content="Creodatatech delivers cutting-edge AI, ML, LLM, and GenAI solutions to drive business innovation and efficiency." />
+  <link rel="icon" href="assets/images/creologo1.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/creologo1.png" alt="Creodatatech Logo" width="150" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section id="banner" class="vh-100 d-flex align-items-center" style="background: url('assets/images/creobackground.jpg') center/cover no-repeat;">
+    <div class="container text-center text-white">
+      <h1 class="display-4 fw-bold">Creodatatech</h1>
+      <p class="lead">Let Data Lead the Way</p>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="assets/images/about.jpg" alt="About Creodatatech" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <hr />
+          <p>
+            Creodatatech is a premier provider of advanced data technology services, specializing in Artificial Intelligence (AI), Machine Learning (ML), Large Language Models (LLMs), and Generative AI (GenAI). Our team of expert data scientists, engineers, and strategists collaborates closely with clients to develop customized solutions that drive innovation and efficiency across various industries.
+          </p>
+          <p>
+            We are committed to delivering scalable and secure AI solutions that align with your business objectives, ensuring measurable improvements in performance and growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Our Services</h2>
+        <p class="text-muted">Empowering Your Business with Intelligent Solutions</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Machine Learning & Predictive Analytics</h5>
+              <p class="card-text">
+                Develop and deploy custom ML models for applications such as fraud detection, customer churn prediction, recommendation systems, and supply chain optimization.
+              </p>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <section class="banner">
-      <div class="container">
-        <h1>Creodatatech</h1>
-        <h2>Let Data Lead the Way</h2>
-      </div>
-    </section>
-
-    <section id="about" class="py-5">
-      <div class="container">
-        <h2 class="default-section-heading text-center">About Us</h2>
-        <p class="text-center">Creodatatech is a leading provider of AI, data engineering, analytics, and machine learning services to businesses of all sizes. Our expert team of data scientists, engineers, and strategists helps clients turn data into strategic assets that drive innovation, efficiency, and growth.</p>
-      </div>
-    </section>
-
-    <section id="services" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="default-section-heading text-center">Our Services</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="expertices-block">
-              <h4>AI & Machine Learning</h4>
-              <p>From predictive analytics to intelligent automation, we design and deploy scalable AI solutions. Our offerings include model development, MLOps, NLP with LLMs, generative AI tools, and responsible AI governance.</p>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Large Language Models (LLMs) & NLP</h5>
+              <p class="card-text">
+                Utilize state-of-the-art LLMs to automate and enhance language-driven tasks, including intelligent document understanding, semantic search, AI-powered chatbots, sentiment analysis, and text classification.
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="expertices-block">
-              <h4>Data Engineering</h4>
-              <p>We build robust data pipelines, modern data warehouses, and real-time streaming platforms that form the backbone of data-driven operations. Solutions are tailored to meet each client’s performance, security, and scalability needs.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Generative AI Solutions</h5>
+              <p class="card-text">
+                Implement GenAI tools to generate content, create synthetic data, and enhance design and product development with AI-generated visuals and simulations.
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="expertices-block">
-              <h4>Data Analytics</h4>
-              <p>Our analytics team transforms raw data into actionable insights using modern BI tools, statistical methods, and machine learning models to support smarter decisions and measurable business outcomes.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">AI Strategy & Integration</h5>
+              <p class="card-text">
+                Develop a clear, actionable AI roadmap, evaluate readiness, identify high-impact opportunities, and ensure successful integration with existing infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Responsible AI & Model Governance</h5>
+              <p class="card-text">
+                Prioritize ethics, transparency, and security in all AI deployments, including model explainability, bias mitigation, data privacy compliance, and continuous performance monitoring.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Data Engineering & Analytics</h5>
+              <p class="card-text">
+                Offer customizable data engineering services, including data integration, warehousing, pipeline development, and real-time streaming, to support advanced analytics and decision-making.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="team" class="py-5 team-section">
-      <div class="container">
-        <h2 class="default-section-heading text-center">Our Team</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-4">
-            <div class="team_detail text-center">
-              <img src="asset/images/lal.jpg" alt="Lal Pillai" class="img-fluid rounded-circle mb-3" style="width:100px;height:100px;background:#ccc;">
-              <h5>Lal Pillai</h5>
-              <p>Solution Architect</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team_detail text-center">
-              <img src="asset/images/maria.jpg" alt="Maria Patel" class="img-fluid rounded-circle mb-3" style="width:100px;height:100px;background:#ccc;">
-              <h5>Maria Patel</h5>
-              <p>Data Scientist</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team_detail text-center">
-              <img src="asset/images/henry.jpg" alt="Henry Lee" class="img-fluid rounded-circle mb-3" style="width:100px;height:100px;background:#ccc;">
-              <h5>Henry Lee</h5>
-              <p>ML Engineer</p>
-            </div>
-          </div>
+  <!-- Team -->
+  <section id="team" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Meet Our Team</h2>
+        <p class="text-muted">The Data Experts</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+          <img src="assets/images/team/lal_pillai.jpg" alt="Lal Pillai" class="rounded-circle mb-3" width="150" />
+          <h5>Lal Pillai</h5>
+          <p class="text-muted">Solution Architect</p>
+        </div>
+        <!-- Add more team members as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Contact Us</h2>
+        <p class="text-muted">Let's Collaborate</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <i class="bi bi-geo-alt-fill me-2"></i>Minneapolis, MN, USA
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-telephone-fill me-2"></i><a href="tel:+1XXXXXXXXXX">+1 (XXX) XXX-XXXX</a>
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-envelope-fill me-2"></i><a href="mailto:lal@creodatatech.com">lal@creodatatech.com</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="py-5 bg-light contact-section">
-      <div class="container">
-        <h2 class="default-section-heading text-center">Contact Us</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
-            <p><a href="tel:+1********"><strong>Phone:</strong> +1********</a></p>
-            <p><a href="mailto:lal@creodatatech.com"><strong>Email:</strong> lal@creodatatech.com</a></p>
-            <p><strong>Location:</strong> New York, NY</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <img src="assets/images/creologo.png" alt="Creodatatech Logo" width="100" class="mb-2" />
+      <p class="mb-0">© 2025 Creodatatech. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <footer class="footer">
-      <div class="container">
-        <img src="asset/images/creologo.png" alt="Creodatatech Logo" />
-        <p>© 2025 Creodatatech. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="asset/js/main.js"></script>
-  </body>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
