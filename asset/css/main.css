@@ -384,3 +384,6 @@ a {
       font-size: 150px;
   }
 }
+body {
+    padding-top: 60px;
+}
