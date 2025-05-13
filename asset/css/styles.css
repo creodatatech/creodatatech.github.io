@@ -1,17 +1,28 @@
 /* asset/css/styles.css */
 
+:root {
+    --primary-color: #007bff; /* Strong professional blue */
+    --secondary-color: #6c757d; /* Medium gray for accents and secondary text */
+    --accent-color: #28a745; /* Professional green */
+    --body-text-color: #495057; /* Slightly darker gray for better readability */
+    --background-light: #f8f9fa; /* Light gray background */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    color: #343a40;
-    line-height: 1.6;
+    color: var(--body-text-color);
+    line-height: 1.7; /* Slightly increased line height for better readability */
+    background-color: var(--background-light); /* Light background for overall softer feel */
 }
 
 .section-title {
     position: relative;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
+    padding-bottom: 0.75rem; /* Reduced padding */
+    margin-bottom: 2.5rem; /* Increased margin for more visual space */
     font-weight: 700;
-    color: #007bff; /* A professional blue */
+    color: var(--primary-color);
+    font-size: 2.2rem; /* Slightly larger title */
+    text-align: center; /* Center the section titles for better focus */
 }
 
 .section-title::before {
@@ -19,104 +30,223 @@ body {
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 50px;
-    height: 3px;
-    background-color: #007bff;
+    width: 60px; /* Slightly wider line */
+    height: 4px; /* Slightly thicker line */
+    background-color: var(--primary-color);
     transform: translateX(-50%);
 }
 
 /* Header */
+header {
+    background-color: #fff; /* White header for clean look */
+    padding: 0.75rem 0; /* Adjusted padding */
+}
+
 .navbar-brand {
-    font-weight: 600;
+    font-weight: 700; /* Stronger brand text */
+    font-size: 1.5rem;
+    color: var(--primary-color); /* Brand in primary color */
 }
 
 .nav-link {
-    color: #343a40 !important;
-    padding: 0.75rem 1rem !important;
-    transition: color 0.3s ease;
+    color: var(--secondary-color) !important;
+    padding: 0.75rem 1.2rem !important; /* Slightly more horizontal padding */
+    transition: color 0.3s ease-in-out; /* Smoother transition */
+    font-weight: 500;
 }
 
 .nav-link:hover {
-    color: #007bff !important;
+    color: var(--primary-color) !important;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 0.5rem; /* Add some spacing between nav items */
 }
 
 /* Banner */
 #banner {
-    background-color: #343a40; /* Darker background for better text contrast */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('asset/images/creobackground.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 8rem 0; /* Increased padding for more visual space */
 }
 
 #banner h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 3.8rem; /* Slightly larger main heading */
+    font-weight: 800; /* Stronger weight */
+    margin-bottom: 1rem;
+    letter-spacing: -0.05rem; /* Slightly tighter letter spacing */
 }
 
 #banner .lead {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.7rem; /* Slightly larger lead text */
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+}
+
+#banner .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+#banner .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
 
 /* About Section */
 #about {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+#about .lead {
+    font-size: 1.15rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
 }
 
 /* Services Section */
 #services {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: #fff; /* White background for service cards */
 }
 
 #services .card {
+    border: none;
     border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05); /* Softer shadow */
+    transition: transform 0.2s ease-in-out; /* Subtle hover effect */
+}
+
+#services .card:hover {
+    transform: translateY(-5px);
+}
+
+#services .card-body {
+    padding: 2rem;
+    text-align: center;
 }
 
 #services .card-title {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #28a745; /* A professional green */
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 1.2rem;
+}
+
+#services .list-unstyled {
+    margin-top: 1rem;
 }
 
 #services .list-unstyled li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
+    color: var(--body-text-color);
+}
+
+#services .list-unstyled li i {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
 }
 
 /* Team Section */
 #team {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: var(--background-light);
+}
+
+#team .card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+#team .card-img-top {
+    border-radius: 50%; /* Circular images */
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 1rem auto;
+}
+
+#team .card-body {
+    padding: 1.5rem;
 }
 
 #team .card-title {
-    font-weight: 500;
-    color: #007bff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
 #team .card-text {
-    color: #6c757d;
+    color: var(--secondary-color);
 }
 
 /* Contact Section */
 #contact {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    color: var(--body-text-color);
+    margin-bottom: 1rem;
 }
 
 #contact a {
-    color: #007bff;
+    color: var(--primary-color);
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
 }
 
 #contact a:hover {
+    color: #0056b3;
     text-decoration: underline;
+}
+
+#contact strong {
+    font-weight: 700;
 }
 
 /* Footer */
 footer {
-    padding: 2rem 0;
+    background-color: #343a40;
+    color: #fff;
+    padding: 2.5rem 0; /* Increased padding */
+    text-align: center;
 }
 
-/* Utility Classes */
+footer img {
+    margin-bottom: 0.75rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Utility Classes (Minor Adjustments) */
 .shadow-sm {
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.06) !important; /* Slightly softer shadow */
 }
