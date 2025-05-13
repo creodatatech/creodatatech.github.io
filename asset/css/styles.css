@@ -1,0 +1,122 @@
+/* asset/css/styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: #007bff; /* A professional blue */
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    transform: translateX(-50%);
+}
+
+/* Header */
+.navbar-brand {
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #343a40 !important;
+    padding: 0.75rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+/* Banner */
+#banner {
+    background-color: #343a40; /* Darker background for better text contrast */
+}
+
+#banner h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+#banner .lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* About Section */
+#about {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* Services Section */
+#services {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#services .card {
+    border-radius: 0.5rem;
+}
+
+#services .card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #28a745; /* A professional green */
+}
+
+#services .list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+/* Team Section */
+#team {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#team .card-title {
+    font-weight: 500;
+    color: #007bff;
+}
+
+#team .card-text {
+    color: #6c757d;
+}
+
+/* Contact Section */
+#contact {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+}
+
+/* Utility Classes */
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
