@@ -1,0 +1,109 @@
+/* asset/css/service-details.css */
+
+.service-header {
+    background-color: #f8f9fa; /* Light background for the header */
+    padding-top: 120px; /* Adjust for fixed header */
+    padding-bottom: 60px;
+}
+
+.service-header h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.service-header .lead {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.service-header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service-header .btn-primary {
+    margin-top: 1rem;
+}
+
+.service-details-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.service-details-section h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.service-details-section .card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.service-details-section .card-title {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service-details-section .card-text {
+    color: var(--body-text-color);
+}
+
+.service-details-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.service-details-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.service-details-section ul li i {
+    color: var(--success-color); /* You might want to define --success-color in your main CSS */
+    margin-right: 0.5rem;
+}
+
+.advantage-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.advantage-section h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.advantage-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.advantage-section ul li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.advantage-section ul li i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.call-to-action-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--background-light);
+    text-align: center;
+}
+
+.call-to-action-section h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
