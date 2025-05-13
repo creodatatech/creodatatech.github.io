@@ -8,10 +8,11 @@
     <link rel="icon" href="asset/images/creologo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="asset/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/new-styles.css">
 </head>
 <body>
-    <header class="bg-white py-3 shadow-sm">
+    <header class="bg-white py-3 shadow-sm fixed-top">
         <div class="container d-flex justify-content-between align-items-center">
             <a href="/" class="navbar-brand">
                 <img src="asset/images/creologo1.png" alt="Creodatatech Logo" height="40">
@@ -20,6 +21,7 @@
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why-us">Why Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -27,11 +29,12 @@
         </div>
     </header>
 
-    <section id="banner" class="text-white text-center d-flex align-items-center" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('asset/images/creobackground.jpg') no-repeat center center/cover; height: 70vh;">
+    <section id="hero" class="text-white text-center py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('asset/images/creobackground.jpg') no-repeat center center/cover; padding-top: 80px;">
         <div class="container">
-            <h1 class="display-3 font-weight-bold mb-3">CreoDatatech</h1>
-            <p class="lead">Let Data Lead the way.</p>
-            <a href="#contact" class="btn btn-primary btn-lg mt-4">Get in Touch</a>
+            <h1 class="display-4 font-weight-bold mb-4">Unlock Your Data Potential with Creodatatech</h1>
+            <p class="lead mb-5">Expert AI, Machine Learning, and Data Engineering Solutions to Drive Business Growth.</p>
+            <a href="#services" class="btn btn-primary btn-lg mr-3">Explore Our Services</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Get a Free Consultation</a>
         </div>
     </section>
 
@@ -40,9 +43,9 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
                     <h2 class="mb-4 section-title">About Us</h2>
-                    <p class="lead mb-4">We are a dedicated team of experts passionate about transforming data into actionable insights and building intelligent solutions.</p>
-                    <p>Creodatatech empowers businesses of all sizes with cutting-edge AI, machine learning, and data engineering services. Our mission is to enable smarter decision-making through intelligent automation and deep data understanding. We offer tailored solutions spanning data pipelines, advanced analytics, artificial intelligence, large language models, and generative AI.</p>
-                    <p>Our experienced professionals combine deep technical knowledge with practical industry insights to deliver scalable and cost-effective solutions. We collaborate closely with our clients to understand their unique challenges and develop data-driven strategies that yield tangible improvements in performance, efficiency, and profitability.</p>
+                    <p class="lead mb-4">We are a team of passionate data scientists, engineers, and AI specialists dedicated to helping businesses leverage the power of data.</p>
+                    <p>Creodatatech provides comprehensive AI, machine learning, and data engineering services tailored to your unique needs. We focus on delivering practical, scalable solutions that drive tangible results.</p>
+                    <p>Our collaborative approach ensures we understand your challenges and work alongside you to build intelligent systems and extract valuable insights from your data.</p>
                 </div>
             </div>
         </div>
@@ -50,60 +53,55 @@
 
     <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5 section-title">Our Services</h2>
+            <h2 class="text-center mb-5 section-title">Our Expertise</h2>
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body text-center">
-                            <h4 class="card-title mb-3"><i class="fas fa-brain fa-2x text-primary mb-2"></i><br>AI & Machine Learning</h4>
-                            <p class="card-text">Building end-to-end ML solutions for predictive analytics, recommendation systems, and fraud detection. Expertise in model training, optimization, and deployment.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fas fa-check-circle text-success mr-2"></i> Custom ML Models</li>
-                                <li><i class="fas fa-check-circle text-success mr-2"></i> Predictive Analytics</li>
-                                <li><i class="fas fa-check-circle text-success mr-2"></i> AI-driven Automation</li>
-                            </ul>
+                            <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                            <h4 class="card-title mb-3">AI & Machine Learning</h4>
+                            <p class="card-text">Develop intelligent systems for prediction, automation, and enhanced decision-making.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body text-center">
-                            <h4 class="card-title mb-3"><i class="fas fa-language fa-2x text-info mb-2"></i><br>LLMs & NLP</h4>
-                            <p class="card-text">Leveraging large language models and NLP for automated document processing, enhanced search capabilities, and intelligent virtual assistants.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fas fa-check-circle text-success mr-2"></i> Text Classification & Summarization</li>
-                                <li><i class="fas fa-check-circle text-success mr-2"></i> Conversational AI</li>
-                                <li><i class="fas fa-check-circle text-success mr-2"></i> Semantic Search</li>
-                            </ul>
+                            <i class="fas fa-language fa-3x text-info mb-3"></i>
+                            <h4 class="card-title mb-3">LLMs & NLP</h4>
+                            <p class="card-text">Unlock insights from text data and build sophisticated language-based applications.</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body text-center">
-                            <h4 class="card-title mb-3"><i class="fas fa-lightbulb fa-2x text-warning mb-2"></i><br>Generative AI</h4>
-                            <p class="card-text">Exploring the creative potential of generative AI for content creation, synthetic data generation, and innovative visual design solutions.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fas fa-check-circle text-success mr-2"></i> AI Content Generation</li>
-                                <li><i class="fas fa-check-circle text-success mr-2"></i> Design & Ideation with GenAI</li>
-                                <li><i class="fas fa-check-circle text-success mr-2"></i> Synthetic Data Generation</li>
-                            </ul>
+                            <i class="fas fa-lightbulb fa-3x text-warning mb-3"></i>
+                            <h4 class="card-title mb-3">Generative AI</h4>
+                            <p class="card-text">Explore creative possibilities with AI for content generation, design, and synthetic data.</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 mb-4">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body text-center">
-                            <h4 class="card-title mb-3"><i class="fas fa-database fa-2x text-secondary mb-2"></i><br>Data Engineering</h4>
-                            <p class="card-text">Architecting robust and scalable data systems, including pipelines and data warehouses, ensuring data is clean, reliable, and ready for analysis and AI applications.</p>
+                            <i class="fas fa-database fa-3x text-secondary mb-3"></i>
+                            <h4 class="card-title mb-3">Data Engineering</h4>
+                            <p class="card-text">Build robust and scalable data pipelines and infrastructure for analysis and AI.</p>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 mb-4">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body text-center">
-                            <h4 class="card-title mb-3"><i class="fas fa-chart-bar fa-2x text-success mb-2"></i><br>Advanced Analytics</h4>
-                            <p class="card-text">Transforming raw data into strategic insights through advanced analytics, interactive dashboards, and sophisticated statistical modeling using the latest BI and ML tools.</p>
+                            <i class="fas fa-chart-bar fa-3x text-success mb-3"></i>
+                            <h4 class="card-title mb-3">Advanced Analytics</h4>
+                            <p class="card-text">Transform raw data into actionable insights with advanced statistical methods and visualization.</p>
+                            <a href="#" class="btn btn-outline-success btn-sm">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -111,10 +109,33 @@
         </div>
     </section>
 
-    <section id="team" class="py-5">
+    <section id="why-us" class="py-5">
         <div class="container text-center">
-            <h2 class="mb-4 section-title">Meet Our Experts</h2>
-            <p class="lead mb-5">The data experts driving innovation and delivering exceptional results.</p>
+            <h2 class="mb-4 section-title">Why Choose Creodatatech?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                    <h4>Expert Team</h4>
+                    <p>Our seasoned professionals bring deep expertise and a passion for data-driven solutions.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-rocket fa-3x text-success mb-3"></i>
+                    <h4>Results-Oriented</h4>
+                    <p>We focus on delivering measurable results and tangible value for your business.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-handshake fa-3x text-info mb-3"></i>
+                    <h4>Collaborative Approach</h4>
+                    <p>We work closely with you to understand your unique needs and build tailored solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 section-title">Meet Our Leadership</h2>
+            <p class="lead mb-5">Our experienced leaders guide our team and drive innovation.</p>
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-4">
                     <div class="card border-0 shadow-sm">
@@ -122,17 +143,18 @@
                         <div class="card-body">
                             <h5 class="card-title">Lal Pillai</h5>
                             <p class="card-text text-muted">Lead Consultant</p>
-                            </div>
+                        </div>
                     </div>
                 </div>
                 </div>
         </div>
     </section>
 
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5">
         <div class="container text-center">
             <h2 class="mb-4 section-title">Contact Us</h2>
-            <p class="lead mb-4">We're eager to discuss your project and explore how our expertise can help your business grow.</p>
+            <p class="lead mb-4">Ready to discuss your project? Get in touch with our team.</p>
+            <p><i class="fas fa-map-marker-alt text-primary mr-2"></i> Maple Grove, Minnesota, USA</p>
             <p><i class="fas fa-phone text-primary mr-2"></i> <strong>Phone:</strong> <a href="tel:+1********">+1********</a></p>
             <p><i class="fas fa-envelope text-info mr-2"></i> <strong>Email:</strong> <a href="mailto:lal@creodatatech.com">lal@creodatatech.com</a></p>
             </div>
@@ -148,7 +170,6 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     <script src="asset/js/main.js"></script>
 </body>
 </html>
