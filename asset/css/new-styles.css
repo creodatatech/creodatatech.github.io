@@ -189,3 +189,8 @@ footer p {
     h1 { font-size: 3rem; }
     h2 { font-size: 2.5rem; }
 }
+/* In asset/css/new-styles.css */
+.homepage-headline {
+    color: #007bff; /* Using your primary blue variable */
+}
+
