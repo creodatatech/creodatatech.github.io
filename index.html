@@ -1,205 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Creodatatech is a leading provider of cutting-edge data technology services.">
-  <title>Creodatatech</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Creodatatech is a leading provider of cutting-edge data and AI technology services." />
+    <title>Creodatatech</title>
+    <link rel="icon" href="asset/images/logo.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/main.css" />
+    <style>
+      body {
+        font-family: 'Raleway', sans-serif;
+        color: #333;
+        background-color: #f8f9fa;
+      }
+      header {
+        background-color: #001f3f;
+      }
+      .navbar-nav .nav-link {
+        color: white;
+        font-weight: 600;
+      }
+      .navbar-nav .nav-link:hover {
+        color: #17a2b8;
+      }
+      .banner {
+        position: relative;
+        text-align: center;
+        color: white;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('asset/images/creobackground.jpg') no-repeat center center/cover;
+        padding: 100px 0;
+      }
+      .banner h1 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      .banner h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #17a2b8;
+      }
+      .default-section-heading {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #001f3f;
+      }
+      .expertices-block {
+        background: white;
+        border-radius: 10px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      }
+      .expertices-block h4 {
+        color: #001f3f;
+      }
+      .footer {
+        background-color: #001f3f;
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+      }
+      .footer img {
+        max-width: 120px;
+        margin-bottom: 15px;
+      }
+      .contact-section a {
+        color: #17a2b8;
+      }
+      .team-section .team_detail {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Creodatatech</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <!-- Favicon -->
-  <link rel="icon" href="asset/images/logo.png">
-
-  <!-- Fonts and CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="asset/css/main.css" rel="stylesheet">
-
-  <!-- Custom Theme Color -->
-  <style>
-    :root {
-      --primary-color: #003366; /* Navy */
-      --accent-color: #00bcd4; /* Cyan */
-      --bg-light: #f9f9f9;
-      --text-color: #333;
-    }
-
-    body {
-      font-family: 'Raleway', sans-serif;
-      color: var(--text-color);
-    }
-
-    .navbar {
-      background-color: var(--primary-color);
-    }
-
-    .navbar-nav .nav-link {
-      color: white !important;
-      font-weight: 600;
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: var(--accent-color) !important;
-    }
-
-    .banner {
-      position: relative;
-      background: url('asset/images/creobackground.jpg') no-repeat center center;
-      background-size: cover;
-      color: white;
-      text-align: center;
-      padding: 120px 20px;
-    }
-
-    .banner h1 {
-      font-size: 3rem;
-      font-weight: 700;
-    }
-
-    .banner h2 {
-      font-size: 1.5rem;
-      font-weight: 400;
-    }
-
-    .section-title {
-      color: var(--primary-color);
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .section {
-      padding: 60px 0;
-    }
-
-    .bg-grey {
-      background-color: var(--bg-light);
-    }
-
-    .footer {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 30px 0;
-      text-align: center;
-    }
-
-    .team_detail_inner img {
-      width: 100%;
-      border-radius: 50%;
-    }
-
-    .expertices-block {
-      background: white;
-      border: 1px solid #e0e0e0;
-      padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    }
-  </style>
-</head>
-<body>
-  <!-- Header -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Creodatatech</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+    <section class="banner">
+      <div class="container">
+        <h1>Creodatatech</h1>
+        <h2>Let Data Lead the Way</h2>
       </div>
-    </div>
-  </nav>
+    </section>
 
-  <!-- Banner -->
-  <section class="banner">
-    <div class="container">
-      <h1>Creodatatech</h1>
-      <h2>Let data lead the way</h2>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section bg-grey">
-    <div class="container">
-      <h2 class="section-title text-center">About Us</h2>
-      <p>
-        Creodatatech is a leading provider of cutting-edge data technology services. Our expert team empowers clients through machine learning, data analytics, and modern infrastructure. With a client-focused approach, we ensure customized solutions that align with business goals and industry trends.
-      </p>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="section">
-    <div class="container">
-      <h2 class="section-title text-center">Services</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="expertices-block text-center">
-            <h4>Machine Learning</h4>
-            <p>Custom AI models, LLMs, GenAI, NLP, and Responsible AI services that drive innovation and efficiency.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="expertices-block text-center">
-            <h4>Data Engineering</h4>
-            <p>Robust pipelines, real-time processing, and data lake architecture for scalable and secure solutions.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="expertices-block text-center">
-            <h4>Data Analytics</h4>
-            <p>Advanced analytics, dashboards, and data science to turn raw data into actionable insights.</p>
-          </div>
-        </div>
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="default-section-heading text-center">About Us</h2>
+        <p class="text-center">Creodatatech is a leading provider of AI, data engineering, analytics, and machine learning services to businesses of all sizes. Our expert team of data scientists, engineers, and strategists helps clients turn data into strategic assets that drive innovation, efficiency, and growth.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Team Section -->
-  <section id="team" class="section bg-grey">
-    <div class="container">
-      <h2 class="section-title text-center">Our Team</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="team_detail text-center">
-            <div class="team_detail_inner">
-              <img src="asset/images/team1.jpg" alt="Lal Pillai">
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="default-section-heading text-center">Our Services</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="expertices-block">
+              <h4>AI & Machine Learning</h4>
+              <p>From predictive analytics to intelligent automation, we design and deploy scalable AI solutions. Our offerings include model development, MLOps, NLP with LLMs, generative AI tools, and responsible AI governance.</p>
             </div>
-            <h5 class="mt-3">Lal Pillai</h5>
-            <p>Solution Architect</p>
+          </div>
+          <div class="col-md-4">
+            <div class="expertices-block">
+              <h4>Data Engineering</h4>
+              <p>We build robust data pipelines, modern data warehouses, and real-time streaming platforms that form the backbone of data-driven operations. Solutions are tailored to meet each client’s performance, security, and scalability needs.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="expertices-block">
+              <h4>Data Analytics</h4>
+              <p>Our analytics team transforms raw data into actionable insights using modern BI tools, statistical methods, and machine learning models to support smarter decisions and measurable business outcomes.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title text-center">Contact Us</h2>
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <p class="text-center"><a href="tel:+1********" class="text-decoration-none"><i class="bi bi-telephone"></i> +1********</a></p>
-          <p class="text-center"><a href="mailto:lal@creodatatech.com" class="text-decoration-none"><i class="bi bi-envelope"></i> lal@creodatatech.com</a></p>
+    <section id="team" class="py-5">
+      <div class="container">
+        <h2 class="default-section-heading text-center">Our Team</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="team_detail text-center">
+              <img src="" alt="" class="img-fluid rounded-circle mb-3" style="width:100px;height:100px;background:#ccc;">
+              <h5>Lal Pillai</h5>
+              <p>Solution Architect</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <img src="asset/images/creologo.png" alt="Creodatatech Logo" style="max-width: 120px;">
-      <p class="mt-3">© 2025 Creodatatech. All rights reserved.</p>
-    </div>
-  </footer>
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="default-section-heading text-center">Contact Us</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <p><a href="tel:+1********"><strong>Phone:</strong> +1********</a></p>
+            <p><a href="mailto:lal@creodatatech.com"><strong>Email:</strong> lal@creodatatech.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="asset/js/main.js"></script>
-</body>
+    <footer class="footer">
+      <div class="container">
+        <img src="asset/images/creologo.png" alt="Creodatatech Logo" />
+        <p>© 2025 Creodatatech. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/main.js"></script>
+  </body>
 </html>
